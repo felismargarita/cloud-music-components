@@ -1,9 +1,9 @@
 ---
 hero:
-  title: cloud-music-components
-  desc: cloud-music-components site example
+  title: 组件库
+  desc: 一个从网易云音乐Win PC版中提取的组件库
   actions:
-    - text: Getting Started
+    - text: 快速开始
       link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
