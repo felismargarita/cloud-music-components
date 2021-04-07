@@ -1,56 +1,37 @@
 import React from 'react'
 import Icon from '@/Icon/index'
-import classnames from 'classnames'
 import {classNamePrefix} from '@/const/index'
+import classnames from 'classnames'
 interface LoadingProps {
   /**
-   * @description 用户自定义className
+   * @default 载入中
+   * @description 加载文案
+   */
+  content?:string
+  /**
+   * @description 自定义className
    */
   className?:string
   /**
    * @description 自定义style
    */
   style?:React.CSSProperties
-
-  /**
-   * @description 是否展示loading状态
-   */
-  loading?:boolean
-  
 }
 
-const Loading:React.FC<LoadingProps> = ({className,style,children,loading})=>{
+const Loading:React.FC<LoadingProps> = ({content,className,style})=>{
 
-  const containerClasses = classnames(
-    `${classNamePrefix}-loading`,
-    className
-    )
-  const classesIcon = classnames(
-    `${classNamePrefix}-loading-icon`,
-    {
-      [`${classNamePrefix}-loading-nested`]:children
-    }
+
+  const classes = classnames(`${classNamePrefix}-loading`,className)
+
+  return (
+    <span className={classes}>
+      <Icon className={`${classNamePrefix}-loading-icon`} style={style} type="loading"/>
+      <span>{content}</span>
+    </span>
   )
-
-  const conatinerClasses = classnames(
-    `${classNamePrefix}-loading-container`,
-    {
-      [`${classNamePrefix}-loading-container-hidden`]:!loading
-    }
-  )
-
-  return <div className={containerClasses} style={style}>
-    {
-      loading || !children
-      ?
-      <Icon className={classesIcon} type="loading"/>
-      :
-      null
-    }
-    <div className={conatinerClasses}>
-      {children}
-    </div>
-  </div>
+}
+Loading.defaultProps = {
+  content:'载入中'
 }
 
 export default Loading

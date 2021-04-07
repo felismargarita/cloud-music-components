@@ -1,33 +1,13 @@
 .#{$prefix}-loading {
-  color: $grey-7;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   .#{$prefix}-loading-icon {
-    font-size: 18px;
-    animation: myLodingRolling 2.2s infinite linear;
-  }
-  .#{$prefix}-loading-nested{
-    position: absolute;
-    top: 0;
-    left: calc(50% - 9px);
-    height: 100%;
-  }
-  .#{$prefix}-loading-container {
-    background: #fff;
-    opacity: .5;
-    user-select: none;
-    pointer-events: none;
-    transition: all 0.2s;
-  }
-  .#{$prefix}-loading-container-hidden {
-    background: none;
-    opacity: 1;
-    user-select: all;
-    pointer-events: all;
-    transition: all 0.2s;
+    animation: myRolling 2s infinite linear;
   }
 }
 
-@keyframes myLodingRolling {
+@keyframes myRolling {
   0% {
     transform: rotate(0deg);;
   }
