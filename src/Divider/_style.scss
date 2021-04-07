@@ -1,0 +1,12 @@
+.#{$prefix}-divider {
+  width: 1px;
+  height: 30px;
+  background: $grey-5;
+  user-select: none;
+  display: inline-block;
+}
+
+.#{$prefix}-divider-horizontal {
+  background: $grey-5;
+  user-select: none;
+}
