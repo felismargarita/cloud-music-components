@@ -1,0 +1,25 @@
+.cloud-music-backtop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: rgb(247, 247, 247);
+  transition: all 0.1s;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  transform: scale(1,1);
+  transform-origin: 0 100%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  &:hover {
+    background: rgb(237, 237, 237);
+    transition: all 0.1s;
+  }
+}
+.cloud-music-backtop-hidden {
+  transform: scale(1,0);
+  transition: transform 0.1s;
+}

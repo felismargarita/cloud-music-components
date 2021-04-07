@@ -102,7 +102,7 @@ export type IconProps = {
 const Icon:React.FC<IconProps> = ({type,style,className,onClick})=>{
   return React.cloneElement(icons[type],
     {
-      style:{...style,cursor:onClick ? 'pointer':'default'},
+      style:{...style,cursor:style?.cursor || ((onClick) ? 'pointer':'default')},
       onClick,
       className
     }
