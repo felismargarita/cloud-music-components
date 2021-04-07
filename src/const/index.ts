@@ -1,1 +1,1 @@
-export const classNamePrefix = 'cloud-music-'
+export const classNamePrefix = 'cloud-music'

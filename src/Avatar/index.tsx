@@ -23,7 +23,7 @@ export interface AvatarProps {
 }
 
 const Avatar:React.FC<AvatarProps> = ({src,size,className,onClick})=>{
-  const classes = classnames(`${classNamePrefix}avatar`,className)
+  const classes = classnames(`${classNamePrefix}-avatar`,className)
   return (
     <div className={classes} onClick={()=>onClick?.()} style={{height:size,width:size}}>
       <img style={{width:'100%',height:'100%'}} src={src}/>

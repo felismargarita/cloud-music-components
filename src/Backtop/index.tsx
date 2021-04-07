@@ -23,8 +23,8 @@ interface BackTopProps {
 
 const BackTop:React.FC<BackTopProps> = ({target,visible:ctlVisible,visibleHeight})=>{
   const [visible,setVisible] = React.useState(ctlVisible)
-  const classes = classnames(`${classNamePrefix}backtop`,{
-    [`${classNamePrefix}backtop-hidden`]:!visible
+  const classes = classnames(`${classNamePrefix}-backtop`,{
+    [`${classNamePrefix}-backtop-hidden`]:!visible
   })
 
   useScroll((v)=>setVisible(v),visibleHeight,target)
