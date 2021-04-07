@@ -2,7 +2,6 @@ import React from 'react'
 import Icon from '@/Icon/index'
 import classnames from 'classnames'
 import {classNamePrefix} from '@/const/index'
-import './style.scss'
 import useScroll from '@/hooks/useScroll'
 interface BackTopProps {
   /**

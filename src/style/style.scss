@@ -1,2 +1,48 @@
 
-$prefix: cloud-music-; //sass选择器默认变量
+$prefix: cloud-music; //sass选择器默认变量
+
+$primary-color: #EC4141 !default;//产品主色,网易红
+
+//灰度色板
+$grey-1: #ffffff !default;
+$grey-2: #fafafa !default;
+$grey-3: #f5f5f5 !default;
+$grey-4: #f0f0f0 !default;
+$grey-5: #d9d9d9 !default;
+$grey-6: #bfbfbf !default;
+$grey-7: #8c8c8c !default;
+$grey-8: #595959 !default;
+$grey-9: #434343 !default;
+$grey-10: #262626 !default;
+$grey-11: #1f1f1f !default;
+$grey-12: #141414 !default;
+$grey-13: #000000 !default;
+
+$box-shadow: 1px 1px 5px $grey-8  !default;
+$border-color: $grey-5;
+$border:1px solid $border-color;
+
+//滚动条样式,webkit内核
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background: $grey-5;
+  border-radius: 2px;
+}
+//firefox
+* {
+  scrollbar-color: #e5e5e5 #f7f7f9; /* 滑块颜色  滚动条背景颜色 */
+  scrollbar-width: thin; /* 滚动条宽度有三种：thin、auto、none */
+}
+
+@mixin omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+@import '../Avatar/style';
+@import '../Backtop/style';
+@import '../Loading/style';

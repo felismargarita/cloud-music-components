@@ -1,7 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
 import {classNamePrefix} from '@/const/index'
-import './style.scss'
 export interface AvatarProps {
   /**
    * @description 图标url,base64

@@ -1,4 +1,4 @@
-.cloud-music-backtop {
+.#{$prefix}-backtop {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
     transition: all 0.1s;
   }
 }
-.cloud-music-backtop-hidden {
+.#{$prefix}-backtop-hidden {
   transform: scale(1,0);
   transition: transform 0.1s;
 }
