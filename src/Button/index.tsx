@@ -45,7 +45,7 @@ const Button:React.FC<ButtonProps> = ({children,className,style,ghost,onClick,ty
 
   return (
     <button onClick={()=>{
-      if(!loading){
+      if(loading){
         return
       }
       onClick?.()
