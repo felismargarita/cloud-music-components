@@ -1,0 +1,21 @@
+.carousel-button-container{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: $grey-7;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carousel-button-icon {
+  font-size: 12px;
+  color: $grey-5;
+  font-weight: 600;
+  &:hover,&.hover {
+    color: $grey-1;
+  }
+
+}

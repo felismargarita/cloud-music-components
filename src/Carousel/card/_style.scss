@@ -1,0 +1,18 @@
+.carousel-card-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-card-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 4px 8px;
+  background: $primary-color;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
