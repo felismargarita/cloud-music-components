@@ -3,6 +3,8 @@ import Card from './card/Card';
 import Dots from './dots/Dots';
 import Button from './button/Button';
 import classnames from 'classnames';
+import {classNamePrefix} from '@/const/index'
+
 interface CarouselProps {
   /**
    * @description text:卡片右下角标识文字,img:图片url
@@ -57,11 +59,11 @@ const Carousel: React.FC<CarouselProps> = ({ cards,className,onClickFrontCard,in
     const isRight =
       index === current + 1 || (current === cards.length - 1 && index === 0);
     const isCurrent = current === index;
-    return classnames('carousel-card-size',className, {
-      'carousel-card-dock': !(isLeft || isRight || isCurrent),
-      'carousel-card-middle': isCurrent,
-      'carousel-card-left': isLeft,
-      'carousel-card-right': isRight,
+    return classnames(`${classNamePrefix}-carousel-card-size`,className, {
+      [`${classNamePrefix}-carousel-card-dock`]: !(isLeft || isRight || isCurrent),
+      [`${classNamePrefix}-carousel-card-middle`]: isCurrent,
+      [`${classNamePrefix}-carousel-card-left`]: isLeft,
+      [`${classNamePrefix}-carousel-card-right`]: isRight,
     });
   };
   if (cards.length < 3) {
@@ -110,11 +112,11 @@ const Carousel: React.FC<CarouselProps> = ({ cards,className,onClickFrontCard,in
 
   return (
     <div
-      className="carousel-container"
+      className={`${classNamePrefix}-carousel-container`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-    <div className="carousel-cards">
+    <div className={`${classNamePrefix}-carousel-cards`}>
       {cards.map((card, index) => (
         <Card onClick={()=>onHandleClick(index)} key={index} text={card.text} className={getClasses(index)}>
           <img src={card.img} />
@@ -123,14 +125,14 @@ const Carousel: React.FC<CarouselProps> = ({ cards,className,onClickFrontCard,in
       {(isHover && buttons) ? (
         <Button
           placement="left"
-          className="carousel-button-left"
+          className={`${classNamePrefix}-carousel-button-left`}
           onClick={() => step(-1, 'manual')}
         />
       ) : null}
       {(isHover && buttons) ? (
         <Button
           placement="right"
-          className="carousel-button-right"
+          className={`${classNamePrefix}-carousel-button-right`}
           onClick={() => step(1, 'manual')}
         />
       ) : null}
@@ -138,7 +140,7 @@ const Carousel: React.FC<CarouselProps> = ({ cards,className,onClickFrontCard,in
       {
         dots 
         ?
-        <div className="carousel-bottom-dots">
+        <div className={`${classNamePrefix}-carousel-bottom-dots`}>
           <Dots
             count={cards.length}
             current={current}

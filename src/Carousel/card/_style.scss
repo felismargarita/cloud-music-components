@@ -1,10 +1,10 @@
-.carousel-card-container {
+.#{$prefix}-carousel-card-container {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.carousel-card-text {
+.#{$prefix}-carousel-card-text {
   position: absolute;
   bottom: 0;
   right: 0;

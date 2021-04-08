@@ -22,19 +22,6 @@ $box-shadow: 1px 1px 5px $grey-8  !default;
 $border-color: $grey-5;
 $border:1px solid $border-color;
 
-//滚动条样式,webkit内核
-*::-webkit-scrollbar {
-  width: 6px;
-}
-*::-webkit-scrollbar-thumb {
-  background: $grey-5;
-  border-radius: 2px;
-}
-//firefox
-* {
-  scrollbar-color: #e5e5e5 #f7f7f9; /* 滑块颜色  滚动条背景颜色 */
-  scrollbar-width: thin; /* 滚动条宽度有三种：thin、auto、none */
-}
 
 @mixin omit {
   overflow: hidden;
@@ -49,3 +36,6 @@ $border:1px solid $border-color;
 @import '../Button/style';
 @import '../Divider/style';
 @import '../Carousel/style';
+@import '../Darggable-Bar/style';
+@import '../Pagination/style';
+@import '../ScrollBar/style';

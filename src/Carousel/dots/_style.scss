@@ -1,5 +1,5 @@
 //单个点的样式
-.carousel-dot-container{
+.#{$prefix}-carousel-dot-container{
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -7,13 +7,13 @@
   background-color: #E6E6E6;
 }
 
-.carousel-dot-selected {
+.#{$prefix}-carousel-dot-selected {
   background-color:$primary-color
 }
 
 
 // 点阵样式
-.carousel-dots-container {
+.#{$prefix}-carousel-dots-container {
   display: flex;
   justify-content:center;
 }

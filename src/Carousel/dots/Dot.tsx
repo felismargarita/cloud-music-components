@@ -1,5 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
+import {classNamePrefix} from '@/const/index'
+
 interface DotProps {
   isSelected?: boolean;
   isHover?: (hover: boolean) => void;
@@ -7,8 +9,8 @@ interface DotProps {
 }
 
 const Dot: React.FC<DotProps> = ({ isSelected, isHover, style }) => {
-  const classes = classnames('carousel-dot-container', {
-    'carousel-dot-selected': isSelected,
+  const classes = classnames(`${classNamePrefix}-carousel-dot-container`, {
+    [`${classNamePrefix}-carousel-dot-selected`]: isSelected,
   });
   return (
     <div

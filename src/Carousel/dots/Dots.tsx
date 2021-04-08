@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Dot from './Dot';
+import {classNamePrefix} from '@/const/index'
+
 interface DotsProps {
   count: number;
   current: number;
@@ -9,7 +11,7 @@ interface DotsProps {
 
 const Dots: React.FC<DotsProps> = ({ count, current, onChange }) => {
   return (
-    <div className="carousel-dots-container">
+    <div className={`${classNamePrefix}-carousel-dots-container`}>
       {new Array(count).fill(0).map((curr, index) => {
         return (
           <Dot

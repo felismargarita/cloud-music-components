@@ -1,4 +1,4 @@
-.carousel-button-container{
+.#{$prefix}-carousel-button-container{
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -10,7 +10,7 @@
   cursor: pointer;
 }
 
-.carousel-button-icon {
+.#{$prefix}-carousel-button-icon {
   font-size: 12px;
   color: $grey-5;
   font-weight: 600;
