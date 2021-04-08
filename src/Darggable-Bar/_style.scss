@@ -1,0 +1,50 @@
+$hover-height:4px !default;
+$normal-height:3px !default;
+
+.#{$prefix}-draggable-bar {
+    position: relative;
+    width: 100%;
+    height: $normal-height;
+    background: $grey-6;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+      height: $hover-height;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -6px;
+      width: 100%;
+      height: 6px;
+    }//扩大点选面积,提升用户体验
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 6px;
+    }//扩大点选面积,提升用户体验
+  }
+  .#{$prefix}-draggable-bar-over {
+    background: $primary-color;
+    border-radius: 2px;
+    height: $normal-height;
+    &:hover {
+      height: $hover-height;
+      margin-top: -1px;
+    }
+  }
+  
+  .#{$prefix}-draggable-bar-dot {
+    height: 8px;
+    width: 8px;
+    background: $primary-color;
+    border-radius: 50%;
+    position: absolute;
+    top:-2px;
+    margin-left: -4px;
+    z-index: 999;
+  }
