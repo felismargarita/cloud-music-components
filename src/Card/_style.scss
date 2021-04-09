@@ -1,0 +1,22 @@
+.#{$prefix}-card {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  .#{$prefix}-card-body{
+    background: none;
+    height: 100%;
+    width: 100%;
+  }
+  .#{$prefix}-card-zoom {
+    transform: scale(1,1);
+    transition: all 0.5s;
+    &:hover{
+      transform: scale(1.1,1.1);
+      transition: all 0.5s;
+    }
+  }
+}
+
