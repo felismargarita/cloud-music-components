@@ -24,7 +24,7 @@ import { Icon } from 'cloud-music-components';
 
 export default () => {
   const types = [
-    'music','download','cloud','fm','mark','stave','love','previous','next','play','pause','oneRound','random','allRound','turnList','start','volumeNormal','volumeSilent','playList','collection','delete','source','like','share','comment','arrowLeft','arrowRight','arrowUp','omit','loading','arrowTop','pencil','warn','info','success','close'
+    'music','download','cloud','fm','mark','stave','love','previous','next','play','pause','oneRound','random','allRound','turnList','start','volumeNormal','volumeSilent','playList','collection','delete','source','like','likeFilled','share','comment','arrowLeft','arrowRight','arrowUp','omit','loading','arrowTop','pencil','warn','info','success','close'
   ]
   return (
     <div style={{
