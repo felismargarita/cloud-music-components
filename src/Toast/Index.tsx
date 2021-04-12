@@ -1,6 +1,6 @@
 import React from 'react'
 import ToastIcon from './ToastIcon'
-import {ToastProps,toast} from './Toast'
+import {ToastProps,default as toast} from './Toast'
 import {classNamePrefix} from '@/const/index'
 
 const typeToast = (type:'info'|'success'|'warn'|'error')=>{

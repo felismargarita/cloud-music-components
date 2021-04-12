@@ -43,7 +43,7 @@ const nodeList:{
   destoryCb:()=>void
 }[] = []
 
-export const toast = (props:ToastProps)=>{
+export default (props:ToastProps)=>{
   const {content,duaration=1500,uniqueKey} = props
   const div = document.createElement('div')
 
