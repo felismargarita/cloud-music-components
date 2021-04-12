@@ -1,4 +1,4 @@
-.cloud-music-page-header {
+.#{$prefix}-page-header {
   font-size: 20px;
   font-weight: 600;
   margin: 12px 0;
@@ -6,7 +6,7 @@
   cursor: pointer;
   user-select: none;
 }
-.cloud-music-page-header-icon{
+.#{$prefix}-page-header-icon{
   font-size: 18px;
   margin-left: 4px;
   vertical-align: bottom;
