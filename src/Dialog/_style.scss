@@ -1,0 +1,31 @@
+.#{$prefix}-dialog {
+  .rc-dialog-close {
+    height: 16px;
+    width: 16px;
+    right: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:$grey-12;
+    outline: none;
+    &:hover {
+      font-weight: 300;
+    }
+  }
+  .rc-dialog-header {
+    border-bottom: none;
+  }
+  .rc-dialog-content {
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px 6px;
+    background-clip: padding-box;
+    box-shadow: $box-shadow;
+  }
+}
+.#{$prefix}-dialog-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
