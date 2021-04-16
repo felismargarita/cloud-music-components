@@ -35,9 +35,9 @@ const Close = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" p-i
 const Warn = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" p-id="2765" width="1em" height="1em"><path d="M512 969.61313087a91.52262617 91.52262617 0 1 1 0-183.04525235 91.52262617 91.52262617 0 0 1 0 183.04525235z m-64.06583831-852.07564966C447.93416169 82.57655303 476.58145871 54.38686913 512 54.38686913a63.60822522 63.60822522 0 0 1 64.06583831 63.15061208v505.20310889c0 34.78038549-28.73846211 63.15418716-64.06583831 63.15418718-35.42032886 0-64.06583831-28.37380166-64.06583831-63.15239961V117.53748121z" p-id="2766"></path></svg>
 const Info = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" p-id="6429" width="1em" height="1em"><path d="M512 953.86837909a55.23354739 55.23354739 0 0 1-55.23354739-55.23354739V401.53290524a55.23354739 55.23354739 0 0 1 110.46709478 0v497.10192646a55.23354739 55.23354739 0 0 1-55.23354739 55.23533493z m0-883.73675818a82.85121486 82.85121486 0 1 1 0 165.70064216 82.85121486 82.85121486 0 0 1 0-165.70064216z" p-id="6430"></path></svg>
 const Success = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" p-id="5224" width="1em" height="1em"><path d="M381.648013 814.724a37.481949 37.481949 0 0 1-52.979911 0L78.924013 564.969208a37.460543 37.460543 0 1 1 52.969208-52.979911L381.648013 761.733386a37.492652 37.492652 0 0 1 0 52.990614z" fill="#3E3A39" p-id="5225"></path><path d="M328.668102 814.724a37.460543 37.460543 0 0 1 0-52.979911l552.478793-552.478792a37.460543 37.460543 0 0 1 52.969208 52.979911L381.648013 814.724a37.481949 37.481949 0 0 1-52.979911 0z" p-id="5226"></path></svg>
-
 const Like = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2254" width="1em" height="1em"><path d="M255.59 419.19H128.41c-18.82 0-33.66 16.78-32.33 36.48l27.78 408.7c1.2 17.82 15.31 31.63 32.31 31.63h99.42c17.91 0 32.41-15.25 32.41-34.06V453.25c0-18.81-14.5-34.06-32.41-34.06zM224 832h-38.19l-23.72-348.81H224zM862.53 419.19H630.36l22.17-136.85A126.86 126.86 0 0 0 590.16 152l-34.46-19.73a32.11 32.11 0 0 0-43.7 11.64L352 419.19v408.7c0 37.61 29.31 68.11 65.45 68.11h369.94c48.86 0 90.3-37.39 97.2-87.72l42.74-311.34c5.67-41.03-24.97-77.75-64.8-77.75z m-41.34 380.39c-2.53 18.48-17.07 32.42-33.8 32.42l-369.62 0.08c-0.35-0.17-1.77-1.46-1.77-4.19V436.44l135.34-232.89 7 4a63.28 63.28 0 0 1 31.05 64.58L567.19 409a64 64 0 0 0 63.17 74.24l231.86-0.1s2.2 1.53 1.7 5.14z" p-id="2255"></path></svg>
 const LikeFilled = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1746" width="1em" height="1em"><path d="M255.61 419.19h-127.2c-18.82 0-33.66 16.76-32.33 36.48l27.78 408.7c1.2 17.82 15.31 31.63 32.31 31.63h99.44c17.89 0 32.39-15.25 32.39-34.06V453.25c0-18.81-14.5-34.06-32.39-34.06zM862.53 419.19H630.36l22.17-136.85A126.86 126.86 0 0 0 590.16 152l-34.46-19.73a32.11 32.11 0 0 0-43.7 11.64L352 419.19v408.7c0 37.61 29.3 68.11 65.45 68.11h369.94c48.86 0 90.3-37.39 97.2-87.72l42.74-311.34c5.67-41.03-24.97-77.75-64.8-77.75z" p-id="1747"></path></svg>
+const image = <svg fill="currentColor" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3366" width="1em" height="1em"><path d="M736 448c53 0 96-43 96-96 0-53-43-96-96-96-53 0-96 43-96 96C640 405 683 448 736 448z" p-id="3367"></path><path d="M904 128 120 128c-31.2 0-56 25.4-56 56.6l0 654.8c0 31.2 24.8 56.6 56 56.6l784 0c31.2 0 56-25.4 56-56.6L960 184.6C960 153.4 935.2 128 904 128zM697.8 523.4c-6-7-15.2-12.4-25.6-12.4-10.2 0-17.4 4.8-25.6 11.4l-37.4 31.6c-7.8 5.6-14 9.4-23 9.4-8.6 0-16.4-3.2-22-8.2-2-1.8-5.6-5.2-8.6-8.2L448 430.6c-8-9.2-20-15-33.4-15-13.4 0-25.8 6.6-33.6 15.6L128 736.4 128 215.4c2-13.6 12.6-23.4 26.2-23.4l715.4 0c13.8 0 25 10.2 25.8 24l0.6 520.8L697.8 523.4z" p-id="3368"></path></svg>
 export const icons = {
   music:MusicSvg,
   download:DownloadSvg,
@@ -76,10 +76,11 @@ export const icons = {
   info:Info,
   success:Success,
   error:Close,
-  likeFilled:LikeFilled
+  likeFilled:LikeFilled,
+  image
 }
 
-export type IconType = 'music'|'download'|'cloud'|'fm'|'mark'|'stave'|'love'|'previous'|'next'|'play'|'pause'|'oneRound'|'random'|'allRound'|'turnList'|'start'|'volumeNormal'|'volumeSilent'|'playList'|'collection'|'delete'|'source'|'arrowUp'|'like'|'share'|'comment'|'arrowLeft'|'arrowRight'|'omit'|'loading'|'arrowTop'|'pencil'|'close'|'warn'|'info'|'success'|'error'|'likeFilled'
+export type IconType = 'image'|'music'|'download'|'cloud'|'fm'|'mark'|'stave'|'love'|'previous'|'next'|'play'|'pause'|'oneRound'|'random'|'allRound'|'turnList'|'start'|'volumeNormal'|'volumeSilent'|'playList'|'collection'|'delete'|'source'|'arrowUp'|'like'|'share'|'comment'|'arrowLeft'|'arrowRight'|'omit'|'loading'|'arrowTop'|'pencil'|'close'|'warn'|'info'|'success'|'error'|'likeFilled'
 
 export type IconProps = {
   /**
