@@ -33,22 +33,20 @@ export default ()=>{
   const placeholder = <div style={{height,width,background:'#d9f7be'}}>加载中~~~~~~</div>
   return (
     <div>
-    <div>加载中</div>
-    <Image 
-      fallback={fallBack}
-      placeholder={placeholder}
-      height={height}
-      width={width}
-      src="https://felis.top:9000/picture?md5=a8acdb60f22df5e6fdd03e3cfaecdc65"/>
-    <Divider direction="horizontal"/>
-    <div>加载失败</div>
-    <Image 
-      fallBack={fallBack}
-      placeholder={placeholder}
-      height={height}
-      width={width}
-      onError={()=>Toast.error({content:'这里有张图片加载失败'})}
-      src="https://felis.top:9000/picture?md5=noexists"/>
+      <Image 
+        fallback={fallBack}
+        placeholder={placeholder}
+        height={height}
+        width={width}
+        src="https://felis.top:9000/picture?md5=a8acdb60f22df5e6fdd03e3cfaecdc65"/>
+      <Divider direction="horizontal"/>
+      <Image 
+        fallBack={fallBack}
+        placeholder={placeholder}
+        height={height}
+        width={width}
+        onError={()=>Toast.error({content:'这里有张图片加载失败'})}
+        src="https://felis.top:9000/picture?md5=noexists"/>
     </div>
   )
 }
